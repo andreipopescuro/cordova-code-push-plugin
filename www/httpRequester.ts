@@ -14,12 +14,12 @@ class HttpRequester implements Http.Requester {
     // Set headers for all requests
     cordova.plugin.http.setHeader(
       "X-CodePush-Plugin-Name",
-      "cordova-plugin-code-push-esd"
+      "cordova-code-push-plugin"
     );
     cordova.plugin.http.setHeader(
       "X-CodePush-Plugin-Version",
       cordova.require("cordova/plugin_list").metadata[
-        "cordova-plugin-code-push-esd"
+        "cordova-code-push-plugin"
       ]
     );
     cordova.plugin.http.setHeader(

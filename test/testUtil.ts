@@ -35,12 +35,12 @@ export class TestUtil {
 
   private static defaultTestRunDirectory = path.join(
     os.tmpdir(),
-    "cordova-plugin-code-push-esd",
+    "cordova-code-push-plugin",
     "test-run"
   );
   private static defaultUpdatesDirectory = path.join(
     os.tmpdir(),
-    "cordova-plugin-code-push-esd",
+    "cordova-code-push-plugin",
     "updates"
   );
 
@@ -80,7 +80,7 @@ export class TestUtil {
       TestUtil.PULL_FROM_NPM
     );
     var pluginPath = commandLineFlag
-      ? "cordova-plugin-code-push-esd"
+      ? "cordova-code-push-plugin"
       : TestUtil.thisPluginPath;
     console.log("pluginPath = " + pluginPath);
     return pluginPath;
